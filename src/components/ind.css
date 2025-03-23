@@ -1,0 +1,9 @@
+.rated::before{
+    content:'\1206';
+color:yellow;
+font-size:25px;
+}
+.notRated::before{
+    content: '\1205';
+    font-size:25px;
+}

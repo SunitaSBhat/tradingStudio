@@ -2,7 +2,12 @@ import React, { useState, useContext } from "react";
 import "./nav.css";
 import icon from "./icon.jpg";
 // import  {ThemeContext } from "./ThemeContext";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faList } from '@fortawesome/free-solid-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   // const themeContext = useContext(ThemeContext);
@@ -20,10 +25,10 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Links */}
         <div className="nav-links">
-          <a href="#" className="nav-item active">Home</a>
-          <a href="#" className="nav-item">Features</a>
-          <a href="#" className="nav-item">Pricing</a>
-          <a href="#" className="nav-item">Contact</a>
+          <a href="/" className="nav-item active"><FontAwesomeIcon icon={faHome} />Home</a>
+          <a href="/second" className="nav-item"><FontAwesomeIcon icon={faList} />Create Stratagies</a>
+          <a href="/savedStrategies" className="nav-item"><FontAwesomeIcon icon={faList} />Stratagies</a>
+          <a href="#" className="nav-item"><FontAwesomeIcon icon={faPhone} />Contact</a>
         </div>
 
         {/* Right-Side Elements */}
@@ -42,9 +47,9 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="mobile-menu">
-          <a href="#" className="nav-item">Home</a>
-          <a href="#" className="nav-item">Features</a>
-          <a href="#" className="nav-item">Pricing</a>
+          <a href="/" className="nav-item active">Home</a>
+          <a href="/second" className="nav-item">Create Stratagies</a>
+          <a href="/savedStrategies" className="nav-item">Stratagies</a>
           <a href="#" className="nav-item">Contact</a>
         </div>
       )}

@@ -1,6 +1,6 @@
 .saved-strategies-container {
   max-width: 600px;
-  margin: 20px auto;
+  margin:126px auto;
   padding: 20px;
   background: #ffffff;
   border-radius: 8px;
@@ -13,10 +13,8 @@ h2 {
 }
 
 .strategy-item {
-  border: 1px solid #ddd;
+  
   padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 6px;
   background: #f9f9f9;
 }
 

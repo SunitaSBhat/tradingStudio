@@ -1,0 +1,39 @@
+.built-in-strategies {
+    max-width: 600px;
+    margin: 143px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .strategy-card {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  
+  h3 {
+    margin: 5px 0;
+    color: #007bff;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #fff;
+    padding: 5px;
+    margin: 5px 0
+  }
+  

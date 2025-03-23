@@ -28,9 +28,9 @@ h2, h3 {
 }
 
 input {
-  width: 100%;
+  width: 285px;
   padding: 8px;
-  margin: 10px 0;
+  margin: 10px 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -44,6 +44,7 @@ input {
   cursor: pointer;
   color: #007bff;
   margin-top: 5px;
+  margin: 11px 74px;
 }
 
 .add-condition:hover {

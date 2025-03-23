@@ -3,6 +3,7 @@ import './App.css';
 import { useContext } from 'react';
 import First from "./components/first.jsx";
 import Buildstrategy from "./components/buildStrategy.tsx";
+import BuiltInStrategies from "./components/BuiltInStrategies.tsx";
 import SavedStrategies from "./components/SavedStrategies.tsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import { ThemeContext } from "./components/ThemeContext";
@@ -18,7 +19,7 @@ function App() {
         <Route path="/" element={<First />} />
         <Route path="/second" element={<Buildstrategy />} /> 
         <Route path="/savedStrategies" element={<SavedStrategies/>} />
-        <Route path="/second" element={<Buildstrategy />} /> 
+        <Route path="/builtInStrategies" element={<BuiltInStrategies/>} />
       </Routes>
       </div>
   );

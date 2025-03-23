@@ -40,7 +40,7 @@ const SavedStrategies: React.FC = () => {
               <h3>{strategy.name}</h3>
               
               <div className="conditions">
-                <h4>📈 Buy Conditions:</h4>
+                <h4> Buy Conditions:</h4>
                 {strategy.buyConditions && strategy.buyConditions.length > 0 ? (
                   <ul>
                     {strategy.buyConditions.map((condition, idx) => (
@@ -53,9 +53,9 @@ const SavedStrategies: React.FC = () => {
                   <p>No buy conditions added.</p>
                 )}
               </div>
-
+              <hr className='divider' />
               <div className="conditions">
-                <h4>📉 Sell Conditions:</h4>
+                <h4> Sell Conditions:</h4>
                 {strategy.sellConditions && strategy.sellConditions.length > 0 ? (
                   <ul>
                     {strategy.sellConditions.map((condition, idx) => (

@@ -12,21 +12,7 @@ const StrategyBuilder: React.FC = () => {
   const [buyConditions, setBuyConditions] = useState<string[]>([]);
   const [sellConditions, setSellConditions] = useState<string[]>([]);
   const [savedStrategies, setSavedStrategies] = useState<Strategy[]>([]);
-  // const [darkMode, setDarkMode] = useState<boolean>(
-  //   localStorage.getItem("darkMode") === "true"
-  // );
-
-  // Apply dark mode class
-  // useEffect(() => {
-  //   if (darkMode) {
-  //     document.body.classList.add("dark-mode");
-  //   } else {
-  //     document.body.classList.remove("dark-mode");
-  //   }
-  //   localStorage.setItem("darkMode", JSON.stringify(darkMode));
-  // }, [darkMode]);
-
-  // Load strategies from localStorage on component mount
+  
   useEffect(() => {
     const storedStrategies = localStorage.getItem("strategies");
     if (storedStrategies) {
@@ -67,9 +53,7 @@ const StrategyBuilder: React.FC = () => {
 
   return (
     <div className={`containers`}>
-      {/* <button className="dark-mode-toggle" onClick={() => setDarkMode(!darkMode)}>
-        {darkMode ? "🌞 Light Mode" : "🌙 Dark Mode"}
-      </button> */}
+    
 
       <h2>Strategy Builder</h2>
       <input

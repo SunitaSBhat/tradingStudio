@@ -23,10 +23,10 @@ export default function First() {
       }
 
       if (!isDeleting && index === text.length) {
-        setTimeout(() => setIsDeleting(true), 1000); // Wait before deleting
+        setTimeout(() => setIsDeleting(true), 1000); 
         speed = 100;
       } else if (isDeleting && index === 0) {
-        setTimeout(() => setIsDeleting(false), 500); // Pause before retyping
+        setTimeout(() => setIsDeleting(false), 500); 
         speed = 100;
       }
 

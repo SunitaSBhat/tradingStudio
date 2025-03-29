@@ -7,10 +7,10 @@ import Buildstrategy from "./components/buildStrategy.tsx";
 import BuiltInStrategies from "./components/BuiltInStrategies.tsx";
 import SavedStrategies from "./components/SavedStrategies.tsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import { ThemeContext } from "./components/ThemeContext";
+
 import Nav from "./components/navbar.jsx";
 function App() {
-  // const { theme } = useContext(ThemeContext);
+
 
   return (
     <div className='bg'>

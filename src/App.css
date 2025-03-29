@@ -1,8 +1,22 @@
 .App {
   text-align: center;
 }
+.bg{
+  background-color: white;
+  height:1559px;
+}
 body{
-  background-color:#61dafb1f;
+  box-sizing: border-box;
+}
+#gh{
+  width: 1559px;
+  height: 100%;
+  background: linear-gradient(365deg, #a3ff12c9, #000000);
+}
+.actualvalue{
+  width: 1400px;
+  margin: -1506px 54px;
+
 }
 .rated::before{
   content:'\2605';
@@ -28,7 +42,7 @@ span {
 }
 
 .App-header {
-  background-color: #282c34;
+ 
   min-height: 100vh;
   display: flex;
   flex-direction: column;

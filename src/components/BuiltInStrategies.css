@@ -2,7 +2,7 @@
     max-width: 600px;
     margin: 143px auto;
     padding: 20px;
-    background: white;
+    background:  #0000003d;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
@@ -15,15 +15,16 @@
   }
   
   .strategy-card {
-    background: #f8f9fa;
+    background: #0000000f;
     padding: 15px;
     margin: 10px 0;
     border-radius: 5px;
+    font-family: cursive;
   }
   
   h3 {
     margin: 5px 0;
-    color: #007bff;
+    color: white;
   }
   
   ul {
@@ -32,7 +33,7 @@
   }
   
   li {
-    background: #fff;
+   
     padding: 5px;
     margin: 5px 0
   }

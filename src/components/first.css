@@ -3,20 +3,23 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f8fafc;
+  
   }
   h1{
-    margin:123px 123px;
+    margin: 12px 123px;
+    font-family: cursive;
 
   }
   /* Card styling */
-  .card {
-    background: #ffffff;
+  .cards {
+    background: #11111194;
     padding: 30px;
     width: 400px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: -389px;
+    color:white;
   }
   
   /* Title styling */
@@ -24,6 +27,7 @@
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 5px;
+    color:white;
   }
   
   /* Subtitle styling */
@@ -35,7 +39,7 @@
   
   /* Button styling */
   .button {
-    background-color: #6366f1;
+    background-color: #a3ff12;
     color: white;
     padding: 10px 20px;
     border: none;

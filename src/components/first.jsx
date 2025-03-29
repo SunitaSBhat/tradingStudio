@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import "./first.css";
 import { useNavigate } from 'react-router-dom';
-
+import '@fontsource/inter'; // Defaults to 400 weight
+import '@fontsource/inter/700.css';
 export default function First() {
   const navigate = useNavigate();
   const text = "Welcome to Trading Studio...";
@@ -40,7 +41,7 @@ export default function First() {
     <div>
       <h1>{displayText}</h1>
       <div className='container'>
-        <div className='card'>
+        <div className='cards'>
           <h2 className='title'>Create a Strategy</h2>
           <p className='subtitle'>to Simulate Returns</p>
 

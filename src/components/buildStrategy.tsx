@@ -111,7 +111,7 @@ const StrategyBuilder: React.FC = () => {
         </span>
       </div>
 
-      <button onClick={saveStrategy}>💾 Save Strategy</button>
+      <button onClick={saveStrategy}> Save Strategy</button>
     </div>
   );
 };

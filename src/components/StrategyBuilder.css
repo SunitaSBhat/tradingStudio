@@ -1,8 +1,13 @@
+body{
+  background-image: url('./image.png');
+  background-repeat: none;
+  background-size: cover;
+}
 .container {
   max-width: 327px;
   margin: 346px auto;
   padding: 20px;
-  background: #f8f9fa;
+
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   display: flex
@@ -12,19 +17,21 @@ height: 0px;
 }
 .containers {
   max-width: 327px;
-  margin: 200px auto;
+  margin: 89px auto;
   padding: 20px;
-  background: #f8f9fa;
-  border-radius: 8px;
+  background: #000000b0;
+  border-radius: 21px 21px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   display: flex
 ;
-height: 385px;
-  flex-direction:column;
+  height: 400px;
+  flex-direction: column;
+  color: white;
+  font-family: cursive;
 }
 h2, h3 {
   text-align: center;
-  color: #333;
+  color: white;
 }
 
 input {
@@ -32,7 +39,9 @@ input {
   padding: 8px;
   margin: 10px 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 12px 12px;
+  background-color: transparent;
+  color:white;
 }
 
 .trigger-section {
@@ -42,7 +51,7 @@ input {
 .add-condition {
   display: inline-block;
   cursor: pointer;
-  color: #007bff;
+  color: white;
   margin-top: 5px;
   margin: 11px 74px;
 }
@@ -54,11 +63,12 @@ input {
 button {
   width: 100%;
   padding: 10px;
-  background: #28a745;
+  background: #a3ff12;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+ 
 }
 
 button:hover {

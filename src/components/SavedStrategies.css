@@ -2,20 +2,20 @@
   max-width: 600px;
   margin:126px auto;
   padding: 20px;
-  background: #ffffff;
+  background: #000000b0;;
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
   text-align: center;
-  color: #333;
+  color: white;
 }
 
 .strategy-item {
   
   padding: 15px;
-  background: #f9f9f9;
+  background: #000000b0;
 }
 
 .strategy-item h3 {
@@ -25,10 +25,13 @@ h2 {
 ul {
   padding-left: 20px;
 }
-
+.navbar img{
+  width: 305px;
+  height: 73px;
+}
 button {
-  background: #6366f1;
-  color: white;
+  background: #a3ff12;
+  color: black;
   border: none;
   padding: 8px 12px;
   border-radius: 4px;

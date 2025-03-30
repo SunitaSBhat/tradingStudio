@@ -2,15 +2,14 @@ import React, { useState, useEffect } from "react";
 import "./SavedStrategies.css";
 
 interface Condition {
-  indicator: string;
-  operator: string;
+  
   value: string;
 }
 
 interface Strategy {
   name: string;
-  buyConditions?: Condition[];
-  sellConditions?: Condition[];
+  buyConditions?: string[];  // Change to string[]
+  sellConditions?: string[]; // Change to string[]
 }
 
 const SavedStrategies: React.FC = () => {
@@ -18,6 +17,7 @@ const SavedStrategies: React.FC = () => {
 
   useEffect(() => {
     const storedStrategies = localStorage.getItem("strategies");
+    
     if (storedStrategies) {
       try {
         const parsedStrategies: Strategy[] = JSON.parse(storedStrategies);
@@ -38,35 +38,34 @@ const SavedStrategies: React.FC = () => {
           {savedStrategies.map((strategy, index) => (
             <li key={index} className="strategy-card">
               <h3>{strategy.name}</h3>
-              
+              <div className="cards">
               <div className="conditions">
                 <h4> Buy Conditions:</h4>
                 {strategy.buyConditions && strategy.buyConditions.length > 0 ? (
-                  <ul>
-                    {strategy.buyConditions.map((condition, idx) => (
-                      <li key={idx}>
-                        {condition?.indicator ?? "N/A"} {condition?.operator ?? "N/A"} {condition?.value ?? "N/A"}
-                      </li>
-                    ))}
-                  </ul>
-                ) : (
-                  <p>No buy conditions added.</p>
-                )}
+                    <ul>
+                      {strategy.buyConditions.map((condition, idx) => (
+                       <li key={idx}>{condition}</li> // Directly display the string
+                       ))}
+                          </ul>
+                       ) : (
+                    <p>No buy conditions added.</p>
+                       )}
+
               </div>
               <hr className='divider' />
               <div className="conditions">
                 <h4> Sell Conditions:</h4>
                 {strategy.sellConditions && strategy.sellConditions.length > 0 ? (
-                  <ul>
-                    {strategy.sellConditions.map((condition, idx) => (
-                      <li key={idx}>
-                        {condition?.indicator ?? "N/A"} {condition?.operator ?? "N/A"} {condition?.value ?? "N/A"}
-                      </li>
-                    ))}
-                  </ul>
+               <ul>
+             {strategy.sellConditions.map((condition, idx) => (
+      <li key={idx}>{condition}</li> // Directly display the string
+    ))}
+  </ul>
                 ) : (
-                  <p>No sell conditions added.</p>
-                )}
+  <p>No sell conditions added.</p>
+         )}
+
+              </div>
               </div>
             </li>
           ))}

@@ -1,6 +1,6 @@
 import React from 'react'
 import './navb.css';
-import Trading from './Trading_Site.png';
+import Trading from './images/Trading_Site.png';
 import { useNavigate } from 'react-router-dom';
 export default function Home() {
      const navigate = useNavigate();

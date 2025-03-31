@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./first.css";
 import { useNavigate } from 'react-router-dom';
-import '@fontsource/inter'; // Defaults to 400 weight
+import '@fontsource/inter'; 
 import '@fontsource/inter/700.css';
 export default function First() {
   const navigate = useNavigate();

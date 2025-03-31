@@ -14,7 +14,7 @@ interface Strategy {
   sellConditions: Condition[];
 }
 
-// **Built-in Strategies List**
+
 const builtInStrategies: Strategy[] = [
   {
     name: "RSI & MACD Strategy",

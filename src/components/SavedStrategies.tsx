@@ -8,8 +8,8 @@ interface Condition {
 
 interface Strategy {
   name: string;
-  buyConditions?: string[];  // Change to string[]
-  sellConditions?: string[]; // Change to string[]
+  buyConditions?: string[];  
+  sellConditions?: string[]; 
 }
 
 const SavedStrategies: React.FC = () => {
@@ -44,7 +44,7 @@ const SavedStrategies: React.FC = () => {
                 {strategy.buyConditions && strategy.buyConditions.length > 0 ? (
                     <ul>
                       {strategy.buyConditions.map((condition, idx) => (
-                       <li key={idx}>{condition}</li> // Directly display the string
+                       <li key={idx}>{condition}</li> 
                        ))}
                           </ul>
                        ) : (
@@ -58,7 +58,7 @@ const SavedStrategies: React.FC = () => {
                 {strategy.sellConditions && strategy.sellConditions.length > 0 ? (
                <ul>
              {strategy.sellConditions.map((condition, idx) => (
-      <li key={idx}>{condition}</li> // Directly display the string
+      <li key={idx}>{condition}</li> 
     ))}
   </ul>
                 ) : (

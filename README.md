@@ -2,10 +2,7 @@
 
 <h1>Getting Started with Create React App</h1>
     <p>This project was bootstrapped with <a href="https://github.com/facebook/create-react-app">Create React App</a>.</p>
-<h2>Extra feature we can add</h2>
-<ul>
-<li>User can get the sugesstion to improvement as soon as he upload the strategy</li>
-<li>User can get the notification of news related to stock</li>
+
 <h2>Available Scripts</h2>
     <p>In the project directory, you can run:</p>
 <h2>Steps to use</h2>

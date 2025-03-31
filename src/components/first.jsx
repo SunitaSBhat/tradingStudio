@@ -41,7 +41,7 @@ export default function First() {
     <div>
       <h1>{displayText}</h1>
       <div className='container'>
-        <div className='cards'>
+        <div className='carding'>
           <h2 className='title'>Create a Strategy</h2>
           <p className='subtitle'>to Simulate Returns</p>
 

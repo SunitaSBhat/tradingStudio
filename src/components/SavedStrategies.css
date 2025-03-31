@@ -26,6 +26,8 @@ h2 {
       margin-left:36px;
       background: #111111b3;
       font-family: cursive;
+      padding:12px 12px;
+      border-radius: 12px 12px;
 }
 .conditions{
   display: flex;
